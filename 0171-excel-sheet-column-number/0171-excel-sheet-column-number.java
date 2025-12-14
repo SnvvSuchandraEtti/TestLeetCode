@@ -1,0 +1,1 @@
+class Solution{public int titleToNumber(String c){int n=0;for(char ch:c.toCharArray()){n=n*26+(ch-'A'+1);}return n;}}
