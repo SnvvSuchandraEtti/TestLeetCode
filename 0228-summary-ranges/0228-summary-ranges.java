@@ -1,0 +1,1 @@
+class Solution{public List<String>summaryRanges(int[]n){List<String>r=new ArrayList<>();for(int i=0;i<n.length;){int s=i;while(i+1<n.length&&(long)n[i+1]-n[i]==1)i++;if(i==s)r.add(String.valueOf(n[s]));else r.add(n[s]+"->"+n[i]);i++;}return r;}}
