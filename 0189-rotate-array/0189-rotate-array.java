@@ -1,0 +1,1 @@
+class Solution{void r(int[]n,int s,int e){while(s<e){int t=n[s];n[s]=n[e];n[e]=t;s++;e--;}}public void rotate(int[]n,int k){k%=n.length;r(n,0,n.length-1);r(n,0,k-1);r(n,k,n.length-1);}}
