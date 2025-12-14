@@ -1,0 +1,1 @@
+class Solution{int s(int n){int s=0;while(n>0){int d=n%10;s+=d*d;n/=10;}return s;}public boolean isHappy(int n){Set<Integer>s=new HashSet<>();while(n!=1&&s.add(n)){n=s(n);}return n==1;}}
