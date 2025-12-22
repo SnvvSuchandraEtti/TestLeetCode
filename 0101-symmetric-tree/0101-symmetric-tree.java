@@ -1,0 +1,1 @@
+class Solution{boolean help(TreeNode l,TreeNode r){if(l==null&&r==null)return true;if(l==null||r==null)return false;if(l.val!=r.val)return false;return help(l.left,r.right)&&help(l.right,r.left);}public boolean isSymmetric(TreeNode root){if(root==null)return true;return help(root.left,root.right);}}
